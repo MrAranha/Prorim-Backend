@@ -1,0 +1,6 @@
+@DOTTA_Backend_HostAddress = http://localhost:5039
+
+GET {{DOTTA_Backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
