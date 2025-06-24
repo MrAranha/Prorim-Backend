@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FbSoft_MediatrHandling.EntityRequests.Users.Requests
+namespace Prorim_MediatrHandling.EntityRequests.Users.Requests
 {
     public class GetUserPasswordChangeRequest : IRequest<bool>
     {

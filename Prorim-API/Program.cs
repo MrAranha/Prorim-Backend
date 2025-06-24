@@ -1,31 +1,31 @@
-using FbSoft_Services.Repositories;
-using FbSoft_Services.Services;
-using FbSoft_MediatrHandling.EntityRequests.Users.AutoMapper;
-using FbSoft_MediatrHandling.Interfaces;
+using Prorim_Services.Repositories;
+using Prorim_Services.Services;
+using Prorim_MediatrHandling.EntityRequests.Users.AutoMapper;
+using Prorim_MediatrHandling.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using FbSoft_MediatrHandling.EntityRequests.Users.Interfaces;
-using FbSoft_Services.Queries.Users;
-using FbSoft_Services.Interfaces;
-using FbSoft_MediatrHandling.EntityRequests.Carros.Interfaces;
-using FbSoft_Services.Queries.Carros;
+using Prorim_MediatrHandling.EntityRequests.Users.Interfaces;
+using Prorim_Services.Queries.Users;
+using Prorim_Services.Interfaces;
 using Microsoft.OpenApi.Models;
-using FbSoft_Backend.Email;
-using FbSoft_MediatrHandling.Entities;
+using Prorim_Backend.Email;
+using Prorim_MediatrHandling.Entities;
+using Prorim_MediatrHandling.EntityRequests.Lembretes.Interfaces;
+using Prorim_Services.Queries.Lembretes;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddScoped<DbSession>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<ICarroRepository, CarroRepository>();
+builder.Services.AddScoped<ILembretesRepository, LembretesRepository>();
 
 #region AddTransient
 builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 builder.Services.AddTransient<IMailService, MailService>();
 builder.Services.AddTransient<IGetPagedUsersQuery, GetPagedUsersQuery>();
-builder.Services.AddTransient<IGetPagedCarroQuery, GetPagedCarroQuery>();
+builder.Services.AddTransient<IGetPagedLembretesQuery, GetPagedLembretesQuery>();
 #endregion
 
 builder.Services.AddTransient<IFbSoftQuery, DottaQuery>();
@@ -50,7 +50,7 @@ builder.Services.AddSwaggerGen(c =>
         Description = "TESTE",
         Contact = new OpenApiContact
         {
-            Name = "Concessionária",
+            Name = "Concessionï¿½ria",
             Email = "concessionaria.noreply@gmail.com"
         }
     });

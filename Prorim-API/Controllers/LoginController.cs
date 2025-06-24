@@ -1,10 +1,10 @@
-﻿using FbSoft_MediatrHandling.EntityRequests.Login.Requests;
-using FbSoft_MediatrHandling.EntityRequests.Login.Result;
+﻿using Prorim_MediatrHandling.EntityRequests.Login.Requests;
+using Prorim_MediatrHandling.EntityRequests.Login.Result;
 using MediatR;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FbSoft_Backend.Controllers
+namespace Prorim_Backend.Controllers
 {
     [ApiController]
     [Route("api/auth/[controller]")]

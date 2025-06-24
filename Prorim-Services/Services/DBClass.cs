@@ -1,4 +1,4 @@
-﻿namespace FbSoft_Services.Services
+﻿namespace Prorim_Services.Services
 {
     public class DBClass
     {

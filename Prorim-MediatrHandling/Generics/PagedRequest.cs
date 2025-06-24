@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FbSoft_MediatrHandling.Generics
+namespace Prorim_MediatrHandling.Generics
 {
     public class PagedRequest
     {

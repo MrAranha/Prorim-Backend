@@ -1,9 +1,9 @@
-﻿using FbSoft_MediatrHandling.EntityRequests.Users.Results;
-using FbSoft_MediatrHandling.Generics;
-using FbSoft_MediatrHandling.Interfaces;
+﻿using Prorim_MediatrHandling.EntityRequests.Users.Results;
+using Prorim_MediatrHandling.Generics;
+using Prorim_MediatrHandling.Interfaces;
 using MediatR;
 
-namespace FbSoft_MediatrHandling.EntityRequests.Users.Requests
+namespace Prorim_MediatrHandling.EntityRequests.Users.Requests
 {
     public class GetUserPagedRequest : PagedRequest, IRequest<IEnumerable<GetUserPagedResult>>
     {

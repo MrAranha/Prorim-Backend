@@ -1,5 +1,5 @@
-﻿using FbSoft_MediatrHandling.EntityRequests.Users.Requests;
-using FbSoft_MediatrHandling.Interfaces;
+﻿using Prorim_MediatrHandling.EntityRequests.Users.Requests;
+using Prorim_MediatrHandling.Interfaces;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FbSoft_MediatrHandling.EntityRequests.Users.Handlers
+namespace Prorim_MediatrHandling.EntityRequests.Users.Handlers
 {
     public class GetCarroEditRequestHandler : IRequestHandler<GetCarroEditRequest, bool>
     {
@@ -15,7 +15,7 @@ namespace FbSoft_MediatrHandling.EntityRequests.Users.Handlers
         public GetCarroEditRequestHandler(IUserRepository repository) { _repository = repository; }
         public async Task<bool> Handle(GetCarroEditRequest request, CancellationToken cancellationToken)
         {
-            await _repository.Edit(new FbSoft_Services.Entities.TB_Users()
+            await _repository.Edit(new Prorim_Services.Entities.TB_Users()
             {
                 id = request.id,
                 displayName = request.name,

@@ -1,6 +1,6 @@
-﻿using FbSoft_Services.Entities;
+﻿using Prorim_Services.Entities;
 
-namespace FbSoft_MediatrHandling.Interfaces
+namespace Prorim_MediatrHandling.Interfaces
 {
     public interface IUserRepository
     {

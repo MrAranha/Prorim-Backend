@@ -1,5 +1,5 @@
-﻿using FbSoft_MediatrHandling.EntityRequests.Users.Requests;
-using FbSoft_MediatrHandling.Interfaces;
+﻿using Prorim_MediatrHandling.EntityRequests.Users.Requests;
+using Prorim_MediatrHandling.Interfaces;
 using MediatR;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FbSoft_MediatrHandling.EntityRequests.Users.Handlers
+namespace Prorim_MediatrHandling.EntityRequests.Users.Handlers
 {
     public class GetCarroCreateRequestHandler : IRequestHandler<GetCarroCreateRequest, string>
     {
@@ -23,7 +23,7 @@ namespace FbSoft_MediatrHandling.EntityRequests.Users.Handlers
                 //TODO CRIAR SERVICO DE NOTIFICACAO GLOBAL :D
                 throw new Exception("Email já em uso!");
             }
-            return await _repository.Add(new FbSoft_Services.Entities.TB_Users()
+            return await _repository.Add(new Prorim_Services.Entities.TB_Users()
             {
                 id = System.Guid.NewGuid().ToString(),
                 role = "U",

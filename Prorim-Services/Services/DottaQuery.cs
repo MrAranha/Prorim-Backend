@@ -1,7 +1,7 @@
 ﻿using Dapper;
-using FbSoft_Services.Interfaces;
+using Prorim_Services.Interfaces;
 
-namespace FbSoft_Services.Services
+namespace Prorim_Services.Services
 {
     public class DottaQuery : IFbSoftQuery
     {

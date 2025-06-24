@@ -1,7 +1,7 @@
-﻿using FbSoft_MediatrHandling.EntityRequests.Login.Requests;
-using FbSoft_MediatrHandling.EntityRequests.Login.Result;
-using FbSoft_MediatrHandling.Interfaces;
-using FbSoft_Services.Entities;
+﻿using Prorim_MediatrHandling.EntityRequests.Login.Requests;
+using Prorim_MediatrHandling.EntityRequests.Login.Result;
+using Prorim_MediatrHandling.Interfaces;
+using Prorim_Services.Entities;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;

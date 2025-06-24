@@ -2,7 +2,7 @@
 using MySql.Data.MySqlClient;
 using Microsoft.Extensions.Configuration;
 
-namespace FbSoft_Services.Services
+namespace Prorim_Services.Services
 {
     public sealed class DbSession : IDisposable
     {

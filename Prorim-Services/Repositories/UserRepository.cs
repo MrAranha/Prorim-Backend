@@ -1,11 +1,11 @@
 ﻿using Dapper;
 using DbExtensions;
-using FbSoft_Services.Services;
-using FbSoft_MediatrHandling.Interfaces;
-using FbSoft_Services.Entities;
+using Prorim_Services.Services;
+using Prorim_MediatrHandling.Interfaces;
+using Prorim_Services.Entities;
 using Microsoft.IdentityModel.Tokens;
 
-namespace FbSoft_Services.Repositories
+namespace Prorim_Services.Repositories
 {
     public class UserRepository : IUserRepository
     {

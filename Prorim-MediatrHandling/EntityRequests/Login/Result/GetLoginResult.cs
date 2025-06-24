@@ -1,11 +1,11 @@
-﻿using FbSoft_Services.Entities;
+﻿using Prorim_Services.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FbSoft_MediatrHandling.EntityRequests.Login.Result
+namespace Prorim_MediatrHandling.EntityRequests.Login.Result
 {
     public class GetLoginResult
     {

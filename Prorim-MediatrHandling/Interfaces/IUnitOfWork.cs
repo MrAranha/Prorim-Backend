@@ -1,4 +1,4 @@
-﻿namespace FbSoft_MediatrHandling.Interfaces
+﻿namespace Prorim_MediatrHandling.Interfaces
 {
     public interface IUnitOfWork : IDisposable
     {

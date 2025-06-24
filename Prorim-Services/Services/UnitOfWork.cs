@@ -1,6 +1,6 @@
-﻿using FbSoft_MediatrHandling.Interfaces;
+﻿using Prorim_MediatrHandling.Interfaces;
 
-namespace FbSoft_Services.Services
+namespace Prorim_Services.Services
 {
     public sealed class UnitOfWork : IUnitOfWork, IAsyncDisposable
     {

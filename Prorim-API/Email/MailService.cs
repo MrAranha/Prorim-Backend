@@ -1,11 +1,11 @@
-﻿using FbSoft_MediatrHandling.Entities;
-using FbSoft_MediatrHandling.Interfaces;
+﻿using Prorim_MediatrHandling.Entities;
+using Prorim_MediatrHandling.Interfaces;
 using Microsoft.Extensions.Options;
 using MimeKit;
 using System.Net;
 using System.Net.Mail;
 
-namespace FbSoft_Backend.Email
+namespace Prorim_Backend.Email
 {
     public class MailService : IMailService
     {

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace FbSoft_Services.Entities
+namespace Prorim_Services.Entities
 {
     [Table("TB_Users")]
     public class TB_Users

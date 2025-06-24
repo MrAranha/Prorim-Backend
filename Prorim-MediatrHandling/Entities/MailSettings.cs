@@ -1,4 +1,4 @@
-﻿namespace FbSoft_MediatrHandling.Entities
+﻿namespace Prorim_MediatrHandling.Entities
 {
     public class MailSettings
     {

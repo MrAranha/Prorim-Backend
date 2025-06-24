@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FbSoft-Backend", "FbSoft-Backend.csproj", "{9C6B1BC0-42ED-4E66-BC31-1209C09687C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prorim-Backend", "Prorim-Backend.csproj", "{9C6B1BC0-42ED-4E66-BC31-1209C09687C6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FbSoft-MediatrHandling", "..\FbSoft-MediatrHandling\FbSoft-MediatrHandling.csproj", "{9D311559-772C-43C8-9E97-AFC9708FFC1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prorim-MediatrHandling", "..\Prorim-MediatrHandling\Prorim-MediatrHandling.csproj", "{9D311559-772C-43C8-9E97-AFC9708FFC1C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FbSoft-Services", "..\FbSoft-Services\FbSoft-Services.csproj", "{E579A0A3-BE15-4FCB-8E73-A8F37957C266}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prorim-Services", "..\Prorim-Services\Prorim-Services.csproj", "{E579A0A3-BE15-4FCB-8E73-A8F37957C266}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E96C4C1E-A565-4197-ACB9-F9279E3B9CD2}"
 	ProjectSection(SolutionItems) = preProject

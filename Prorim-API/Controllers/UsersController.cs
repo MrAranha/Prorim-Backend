@@ -1,7 +1,7 @@
-using FbSoft_MediatrHandling.EntityRequests.Users.Requests;
-using FbSoft_MediatrHandling.EntityRequests.Users.Results;
-using FbSoft_MediatrHandling.Interfaces;
-using FbSoft_Services.Entities;
+using Prorim_MediatrHandling.EntityRequests.Users.Requests;
+using Prorim_MediatrHandling.EntityRequests.Users.Results;
+using Prorim_MediatrHandling.Interfaces;
+using Prorim_Services.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -9,7 +9,7 @@ using System.Net;
 using System.Net.Mime;
 using System.Security.Claims;
 
-namespace FbSoft_Backend.Controllers
+namespace Prorim_Backend.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

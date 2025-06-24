@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FbSoft_MediatrHandling.Interfaces
+namespace Prorim_MediatrHandling.Interfaces
 {
     public interface IDefaultHandler
     {

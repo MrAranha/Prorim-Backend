@@ -1,16 +1,16 @@
 ﻿using Dapper;
 using DbExtensions;
 using DevExpress.Mvvm.Native;
-using FbSoft_Services.Services;
-using FbSoft_MediatrHandling.EntityRequests.Users.Interfaces;
-using FbSoft_MediatrHandling.EntityRequests.Users.Requests;
-using FbSoft_MediatrHandling.EntityRequests.Users.Results;
-using FbSoft_MediatrHandling.Interfaces;
+using Prorim_Services.Services;
+using Prorim_MediatrHandling.EntityRequests.Users.Interfaces;
+using Prorim_MediatrHandling.EntityRequests.Users.Requests;
+using Prorim_MediatrHandling.EntityRequests.Users.Results;
+using Prorim_MediatrHandling.Interfaces;
 using Microsoft.IdentityModel.Tokens;
 using System.Linq;
 using System.Net.Http.Headers;
 
-namespace FbSoft_Services.Queries.Users
+namespace Prorim_Services.Queries.Users
 {
     public class GetPagedUsersQuery : IGetPagedUsersQuery
     {
