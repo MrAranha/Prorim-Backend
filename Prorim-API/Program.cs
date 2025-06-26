@@ -11,8 +11,12 @@ using Prorim_Services.Interfaces;
 using Microsoft.OpenApi.Models;
 using Prorim_Backend.Email;
 using Prorim_MediatrHandling.Entities;
+using Prorim_MediatrHandling.EntityRequests.Laudos.Interfaces;
 using Prorim_MediatrHandling.EntityRequests.Lembretes.Interfaces;
+using Prorim_MediatrHandling.EntityRequests.Receituario.Interfaces;
+using Prorim_Services.Queries.Laudos;
 using Prorim_Services.Queries.Lembretes;
+using Prorim_Services.Queries.Receituario;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,12 +24,16 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddScoped<DbSession>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ILembretesRepository, LembretesRepository>();
+builder.Services.AddScoped<IReceituarioRepository, ReceituarioRepository>();
+builder.Services.AddScoped<ILaudosRepository, LaudosRepository>();
 
 #region AddTransient
 builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 builder.Services.AddTransient<IMailService, MailService>();
 builder.Services.AddTransient<IGetPagedUsersQuery, GetPagedUsersQuery>();
 builder.Services.AddTransient<IGetPagedLembretesQuery, GetPagedLembretesQuery>();
+builder.Services.AddTransient<IGetPagedLaudosQuery, GetPagedLaudosQuery>();
+builder.Services.AddTransient<IGetPagedReceituarioQuery, GetPagedReceituarioQuery>();
 #endregion
 
 builder.Services.AddTransient<IFbSoftQuery, DottaQuery>();
