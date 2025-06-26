@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using System.Net.Mime;
 using System.Security.Claims;
+using Prorim_MediatrHandling.Entities;
 
 namespace Prorim_Backend.Controllers
 {
@@ -58,6 +59,14 @@ namespace Prorim_Backend.Controllers
         }
         [HttpPut("edit")]
         public async Task<bool> EditUser([FromForm] GetReceituarioEditRequest request)
+        {
+            return await _mediator.Send(request);
+        }
+        
+        
+        
+        [HttpGet("getall")]
+        public async Task<List<TB_Receituario>> Search([FromQuery] GetAllReceitasRequest request)
         {
             return await _mediator.Send(request);
         }

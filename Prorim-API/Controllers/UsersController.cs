@@ -84,5 +84,12 @@ namespace Prorim_Backend.Controllers
         {
             return await _mediator.Send(request);
         }
+        
+        
+        [HttpGet("getall")]
+        public async Task<List<TB_Users>> Search([FromQuery] GetAllUserRequest request)
+        {
+            return await _mediator.Send(request);
+        }
     }
 }
