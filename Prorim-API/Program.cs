@@ -9,6 +9,7 @@ using Prorim_MediatrHandling.EntityRequests.Users.Interfaces;
 using Prorim_Services.Queries.Users;
 using Prorim_Services.Interfaces;
 using Microsoft.OpenApi.Models;
+using Prorim_Backend.Controllers;
 using Prorim_Backend.Email;
 using Prorim_MediatrHandling.Entities;
 using Prorim_MediatrHandling.EntityRequests.Laudos.Interfaces;
@@ -21,12 +22,13 @@ using Prorim_Services.Queries.Receituario;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddHostedService<EmailCheck>();
+
 builder.Services.AddScoped<DbSession>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ILembretesRepository, LembretesRepository>();
 builder.Services.AddScoped<IReceituarioRepository, ReceituarioRepository>();
 builder.Services.AddScoped<ILaudosRepository, LaudosRepository>();
-
 #region AddTransient
 builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 builder.Services.AddTransient<IMailService, MailService>();

@@ -13,5 +13,6 @@ namespace Prorim_Services.Entities
         public string clienteID { get; set; }
         public string tipoTransplante { get; set; }
         public string remedio { get; set; }
+        public bool emailEnviado { get; set; }
     }
 }

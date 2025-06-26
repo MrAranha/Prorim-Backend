@@ -35,8 +35,8 @@ namespace Prorim_Services.Repositories
 
         public async Task<int> Add(TB_Lembretes lembrete)
         {
-            var sql = @"INSERT INTO TB_Lembretes (nomeLembrete, DataLembrete, clienteID, tipoTransplante, remedio)
-                        VALUES (@nomeLembrete, @DataLembrete, @clienteID, @tipoTransplante, @remedio);
+            var sql = @"INSERT INTO TB_Lembretes (nomeLembrete, DataLembrete, clienteID, tipoTransplante, remedio, emailEnviado)
+                        VALUES (@nomeLembrete, @DataLembrete, @clienteID, @tipoTransplante, @remedio, false);
                         SELECT LAST_INSERT_ID();";
 
             var id = await _session.Connection.ExecuteScalarAsync<int>(
